@@ -21,4 +21,14 @@ public class UserController {
 
   }
 
+ // 수정 페이지로 이동
+  @RequestMapping("/user/update.do")
+  public String update() {
+
+      logger.info("경로 : update");
+
+      return "user/update";
+
+  }
+
 }

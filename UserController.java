@@ -41,4 +41,14 @@ public class UserController {
 
   }
 
+ // 회원조회 페이지로 이동 - develop 브랜치에서 작업 
+  @RequestMapping("/user/select.do")
+  public String select() {
+
+      logger.info("경로 : select");
+
+      return "user/select";
+
+  }
+
 }
